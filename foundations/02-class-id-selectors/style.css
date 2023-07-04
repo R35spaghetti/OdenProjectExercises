@@ -1,0 +1,20 @@
+p.oddNumbers
+{
+background: pink;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+p.oddNumbers.cooler
+{
+
+    font-size: 24px;
+}
+#bigBlue
+{
+    color: blue;
+    font-size: 36px;
+}
+#greeney
+{
+    font-weight: bold;
+    background: lightgreen;
+}
