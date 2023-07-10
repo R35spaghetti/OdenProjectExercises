@@ -10,12 +10,82 @@ body {
 img {
   width: 600px;
 }
+.page-container {
+  display: flex;
+  flex-direction: column;
+}
 
+.containerLogoInput {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  flex-grow: 1;
+}
+.containerHeadFoot {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-shrink: 0;
+  padding: 10px;
+
+}
+
+.footer
+{
+  display: flex;
+  flex-direction: row;
+  background-color: darkgray;
+  justify-content: space-between;
+  color: #eeeeee;
+  flex-shrink: 0;
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+
+
+}
+
+a
+{
+  text-decoration: none;
+  color: lightgray;
+}
+.left-links
+{
+ display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style-type: none;
+
+}
+.right-links
+{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style-type: none;
+}
 button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
   background: #eee;
+  font-weight: bolder;
+  padding: 10px;
+  gap: 8px;
+
+}
+.buttons
+{
+  margin-left: 200px;
 }
 
 input {
@@ -24,47 +94,5 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
-}
-
-/* SOLUTION */
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-button {
-  padding: 8px 16px;
-}
-
-.content {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-a {
-  color: #666;
-  text-decoration: none;
-}
-
-.header,
-.footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 16px;
-}
-
-.footer {
-  background: #eee;
-}
-
-ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 16px
+  margin-left: 70px;
 }
