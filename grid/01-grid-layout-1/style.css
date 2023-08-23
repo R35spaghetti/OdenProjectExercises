@@ -5,6 +5,12 @@ html {
 }
 
 .container {
+ display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr 1fr 5fr 1fr;
+
+  grid-gap: 15px;
+
   text-align: center;
   height: 100%;
   padding: 16px;
@@ -12,7 +18,9 @@ html {
 }
 
 .container div {
-  padding: 15px;
+    border: 1px solid #000;
+    padding: 20px;
+    text-align: center;
   font-size: 32px;
   font-family: Helvetica;
   font-weight: bold;
@@ -21,10 +29,13 @@ html {
 }
 
 .header {
+    grid-column: 1 / span 2;
   background-color: #006157;
 }
 
 .sidebar {
+    grid-column: 1;
+    grid-row: span 2;
   background-color: #005B94;
 }
 
@@ -37,6 +48,7 @@ html {
 }
 
 .footer {
+    grid-column: span 2;
   background-color: #393f4d;
 }
 
