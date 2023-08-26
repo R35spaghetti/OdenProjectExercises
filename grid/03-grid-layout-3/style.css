@@ -36,7 +36,7 @@
 .menu ul,
 .menu li {
   display: grid;
-  grid-column: span 4;
+  grid-column: span 2;
   grid-row: 1;
   column-gap: 70px;
   font-size: 16px;
@@ -78,8 +78,17 @@
 }
 
 .nav ul li {
+  display: grid;
   font-size: 16px;
   text-transform: uppercase;
+}
+.nav ul
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  gap: 10px;
+  justify-content: center;
 }
 
 .article {
