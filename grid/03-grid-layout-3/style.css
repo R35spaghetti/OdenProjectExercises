@@ -41,6 +41,8 @@
 }
 
 .sidebar {
+  border-right: solid white 5px;
+  border-top: solid white 5px;
   grid-area: sidebar;
   display: grid;
   grid-template-rows: repeat(4, minmax(150px, 1fr));
@@ -71,6 +73,8 @@
 }
 
 .nav {
+  border-bottom: solid white 5px;
+  border-top: solid white 5px;
   grid-area: nav;
   background-color: #C50208;
 }
@@ -123,6 +127,7 @@
 }
 
 .footer {
+  border-top: solid white 5px;
   grid-area: footer;
   background-color: #393f4d;
 }
